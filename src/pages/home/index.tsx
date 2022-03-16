@@ -1,4 +1,5 @@
 import request from "@/utils/request";
+import { Button } from "antd-mobile";
 import React from "react";
 import styles from "./index.module.less";
 const Home = () => {
@@ -17,6 +18,13 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
+      <Button
+        onClick={() => {
+          alert("hello.");
+        }}
+      >
+        Default
+      </Button>
       <input type="file" name="filename" onChange={onUpload} />
     </div>
   );
